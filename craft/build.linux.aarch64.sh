@@ -25,7 +25,8 @@ cmake "$HOME/.." \
 -DCMAKE_INSTALL_PREFIX="$INSTALL_DIR" \
 -DCMAKE_MODULE_PATH="" \
 -DSEETA_AUTHORIZE=OFF \
--DSEETA_MODEL_ENCRYPT=ON
+-DSEETA_MODEL_ENCRYPT=ON \
+-DCMAKE_TOOLCHAIN_FILE=/home/fy/SeetaFace6Open/FaceRecognizer6/CMakeLists-ubuntu-x86-to-arm64-cross-compile.txt
 
 make -j4 VERBOSE=1
 
